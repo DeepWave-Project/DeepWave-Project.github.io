@@ -1,0 +1,83 @@
+
+<!DOCTYPE html> 
+<html> 
+    <title>soundlytics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body> 
+
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+    
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>Soundlytics</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="https://soundlytics.ai/#about" class="w3-bar-item w3-button">Home</a>
+	  <a href="#Technology" class="w3-bar-item w3-button">Technology<a>
+      <a href="https://soundlytics.ai/#Demo" class="w3-bar-item w3-button">Demo</a>
+      <a href="https://soundlytics.ai/l#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="w3-row-padding">
+    <header class="w3-display-container w3-content w3-wide" id="home">
+        <div>
+            <br><br><br>
+        </div>
+		<div class="container">
+			<img src="image.jpg" alt="Soundlytics" height="300" style="width:100%;">
+			<div class="centered">
+				<P><h3 style="font-size:3.5vw"><b>SOUNDLYTICS</b></h3></p>
+				<P><h3 style="font-size:1.25vw"><b>Technology To Build Sound Analysis and Enhancement Platform</b></h3></p>
+				<a href="index.html#contact" ><p style="color:red">Contact us Now!</p> </a>
+			</div>
+		</div>
+    </header>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><center><B>SUNDLYTICS TECHNOLOGY<B></center></h3>
+	<h3 style="font-size:1vw">
+    <p>The auditory data generated from a conversation contains a lot of information, and such information is present everywhere in our daily lives. In services that rely on telecommunications, this overwhelming amount of data contains immense value if it can be captured, processed, and analyzed quickly. Particularly, the call center industry wants to optimize phone calls by improving operators’ voice clarity and automatically summarizing conversations with customers. Such need is particularly critical in public safety-related call centers such as 911 and General Motors OnStar because dispatchers, first responders, and ambulance drivers need clear conversations without background noise while they are talking with callers or co-workers in emergency situations. </P>
+	<P>These demands have risen as telecommunication becomes more prominent than ever before. However, there are few solutions that can solve the problem. Most of the current solutions focus on high-end equipment, which is expensive, and few of them possess the ability to enhance and analyze auditory data in real-time. Thus, for call centers, sound analysis and speech enhancement are expensive tasks. To address these challenges in sound analysis, we introduce DeepWave, an innovative sound analysis platform focusing on sound element separation, understanding, and speech enhancement. Employing the latest artificial intelligence (AI) technology, DeepWave not only produces enhanced speech but also smartly understands the sound, separating auditory data into different sound elements and recognizing related events based on these elements.</P>
+    <p>We adopted and extended a novel deep learning model recently developed by the PI: supervised β-VAE. Supervised β-VAE beats the top-1 performers in the IEEE Detection and Classification of Acoustic Scenes and Events (DCASE) 2017 Acoustic Event Detection (AED) challenge. As the core technology of this project, we inherited the architecture of supervised β-VAE, which is to train a disentangled representation of sound elements and employ it in sound-based event detection and classification. In DeepWare, the core technology to recognize and separate the sound elements is disentangled representation learning through supervised beta‐VAE. As shown in the Figure below, the supervised beta‐VAE model is composed of an encoder, a disentangling layer, and a decoder to learn discriminative features for each sound element. The encoder takes raw features of the sound in the frequency domain as an input and encodes them using a deep neural network (DNN) or a long-short term memory (LSTM) network to represent a single frame or a sequence of frames, to reveal the generative factors. The disentangled layer uses latent attention methods to learn event‐specific latent feature representation and perform event detection/classification. Finally, the decoder uses DNN or LSTM to restructure the sound element from the input.</p>
+	<center>
+		<img src="Technology.jpg" alt="Snow" style="width:50%;">
+		<P><B>Architecture of Supervised beta-VAE for Acoustic Event Detection</B></P>
+	</center>
+    <p>The combination of our AI model and service provides a disruptive technology that will empower call centers, especially public safety related ones (e.g., 911 and General Motors OnStar), to leverage audio information in a brand-new manner. Since there is an overwhelming amount of audio data generated every day, manually separating, understanding, and extracting useful information from audio is impractical. As DeepWave will greatly increase the working efficiency while lowering the cost of these tasks, audio data will provide significantly more values for call centers in their operation and service needs. </p>
+	</h3>
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+</body> 
+</html>
